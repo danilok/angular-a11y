@@ -33,3 +33,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - Revisão de estrutura de um componente
 - `Input binding` vs `Event Binding`
 - O padrão para podermos utilizar `two-way data binding`
+
+# 02. Integração com Reactive Forms
+
+- Como integrar um _custom component_ com `Reactive Forms`
+- A _interface_ `ControlValueAccessor`
+- O papel do _token_ `NG_VALUE_ACCESSOR`
+- A utilizar `ngModel` e `formControlName` com um _custom component_
+
+Na aula foi demonstrado que o componente é compatível com `ngModel` e `formControlName`. Caso fosse necessário apenas manter o acesso via `formControlName`, o que é necessário retirar são os `Input()` e `Output()` do `value` do componente. Desta forma, não seria mais possível usar o `[(ngModel)]` para acessar/alterar valores do componente. Se pretende utilizar com `ngModel`, não esquecer de importar o `FormsModule` no módulo do componente.
