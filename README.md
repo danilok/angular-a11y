@@ -42,3 +42,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - A utilizar `ngModel` e `formControlName` com um _custom component_
 
 Na aula foi demonstrado que o componente é compatível com `ngModel` e `formControlName`. Caso fosse necessário apenas manter o acesso via `formControlName`, o que é necessário retirar são os `Input()` e `Output()` do `value` do componente. Desta forma, não seria mais possível usar o `[(ngModel)]` para acessar/alterar valores do componente. Se pretende utilizar com `ngModel`, não esquecer de importar o `FormsModule` no módulo do componente.
+
+# 03. Acessibilidade
+
+- Onde encontrar e como aplicar regras da [WCAG](https://www.w3.org/TR/WCAG21/)
+- O papel dos atributos `ARIA`
+- Utilização do [Chromevox](https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn) como text reader
+- A importância de se garantir um **único ID**
+- Como evitar que mudanças em componentes externos afetem seu componente
+
+Alguns screen readers do mercado: JAWS, NVDA, VoiceOver e o Chromevox.
